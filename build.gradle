@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id 'net.serenity-bdd.serenity-gradle-plugin' version '4.0.14'
+}
+
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'jcenter'
+        url 'https://jcenter.bintray.com'
+    }
+    maven {
+        name 'serenity-bdd'
+        url 'https://dl.bintray.com/serenity-bdd/maven'
+    }
+}
+
+dependencies {
+    implementation 'net.serenity-bdd:serenity-core:4.0.14'
+    implementation 'net.serenity-bdd:serenity-junit:4.0.14'
+    implementation 'net.serenity-bdd:serenity-cucumber:4.0.14'
+    implementation 'org.slf4j:slf4j-simple:2.0.9'
+    testImplementation 'junit:junit:4.13.2'
+    implementation "io.github.bonigarcia:webdrivermanager:5.9.2"
+    implementation 'org.apache.poi:poi-ooxml:5.2.5'
+}
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+serenity {
+    // Otras configuraciones de Serenity si las tienes
+}
+
+
+
+test {
+    systemProperties['cucumber.filter.tags'] = System.getProperty('cucumber.filter.tags', '')
+    // No dependemos de la propiedad de Serenity para sobreescribir
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
+}
+
+

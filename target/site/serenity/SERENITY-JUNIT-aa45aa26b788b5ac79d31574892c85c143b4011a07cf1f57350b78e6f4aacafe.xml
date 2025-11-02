@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Automatización del flujo principal de OrangeHRM" skipped="0" tests="1" time="0.22" timestamp="2025-11-02 10:14:31"><testcase name="Agregar un nuevo empleado con información básica"><error message="❌ Error al inicializar el navegador: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. &#10;Host info: host: 'LAPTOP-FO4KQKE9', ip: '192.168.0.103'" type="java.lang.RuntimeException">❌ Error al inicializar el navegador: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'LAPTOP-FO4KQKE9', ip: '192.168.0.103'</error><system-err>❌ Error al inicializar el navegador: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'LAPTOP-FO4KQKE9', ip: '192.168.0.103'&#13;
+com.co.paginaorange.utils.Navigator.getDriver(Navigator.java:84)&#13;
+com.co.paginaorange.stepdefinitions.hooks.hook.prepararEscenario(hook.java:22)&#13;
+</system-err></testcase></testsuite>
