@@ -32,7 +32,7 @@ public class Navigator {
 
             // Opciones de Chrome
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("--incognito");
+            //options.addArguments("--incognito");
             options.addArguments("--start-maximized");
             options.addArguments("--disable-extensions");
             options.addArguments("--remote-allow-origins=*");

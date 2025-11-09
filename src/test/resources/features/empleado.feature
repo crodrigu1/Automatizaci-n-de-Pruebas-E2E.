@@ -12,8 +12,8 @@ Característica: Automatización del flujo principal de OrangeHRM
   Dado que el usuario se encuentra en el módulo PIM
   Cuando selecciona la opción Add Employee
   Y ingresa los datos del nuevo empleado:
-    | Nombre  | SegundoNombre | Apellido  |  |
-    | Augusto | Cesar         | Rodriguez |  |
+    | nombre | segundoNombre | apellido  |
+    | Efrain | Daniel        | Rodriguez |
     Y carga una foto de perfil desde el archivo "foto_perfil.png"
    Y guarda la información del empleado
 
@@ -21,7 +21,7 @@ Característica: Automatización del flujo principal de OrangeHRM
   @BuscarEmpleado
   Escenario: : Buscar y validar el empleado creado en el módulo Directory
   Dado que el usuario navega al módulo Directory
-  Cuando ingresa el nombre del empleado "Cesar" en el filtro de búsqueda
+  Cuando ingresa el nombre del empleado "Efrain" en el filtro de búsqueda
   Y ejecuta la búsqueda
-  Entonces el sistema debe mostrar el resultado con el empleado "Augusto Cesar Rodriguez"
+  Entonces el sistema debe mostrar el resultado con el empleado "Efrain Daniel Rodriguez"
 
